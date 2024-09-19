@@ -39,7 +39,7 @@
 
                      <!-- add money input section start -->
 
-                     <div id="getAddMoney" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                     <div id="getAddMoney" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <h3 class="text-center mt-2 font-bold text-xl">Add Money</h3>
                         <form class="card-body">
                           <div class="form-control">
@@ -60,6 +60,31 @@
                         </form>
                       </div>
                      <!-- add money input section end -->
+
+                     <!-- cash out input section start -->
+
+                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <h3 class="text-center font-bold text-xl mt-2">Cash Out</h3>
+                      <form class="card-body">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text font-bold">Cash Out</span>
+                          </label>
+                          <input id="cashOutAmount" type="text" placeholder="Enter Cash Out amount" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text font-bold">Pin</span>
+                          </label>
+                          <input id="cashOutPin" type="password" placeholder="Enter your Pin" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                          <button id="cashOutBtn" class="btn btn-primary">Cash Out</button>
+                        </div>
+                      </form>
+                    </div>
+
+                     <!-- cash out input section end -->
                     
                 </div>
             </div>
@@ -72,6 +97,7 @@
 
     <!-- js links -->
      <script src="./js/home.js"></script>
+     <script src="./js/cashOut.js"></script>
 </body>
 
 </html>
