@@ -27,19 +27,19 @@
                             <label class="label">
                               <span class="label-text font-bold">Phone Number</span>
                             </label>
-                            <input type="text" placeholder="Your phone number" class="input input-bordered" required />
+                            <input id="phNumber" type="text" placeholder="Your phone number" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold">Pin</span>
                             </label>
-                            <input type="pin" placeholder="Enter your 4 digit pin" class="input input-bordered" required />
+                            <input type="password" placeholder="Enter your 4 digit pin" class="input input-bordered" autocomplete="on" required />
                             <label class="label">
                               <a href="#" class="label-text-alt link link-hover font-bold">Forgot pin?</a>
                             </label>
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Login</button>
+                            <button id="loginBtn" class="btn btn-primary">Login</button>
                           </div>
                         </form>
                       </div>
@@ -52,6 +52,11 @@
             </div>
           </div>
     </main>
+
+
+
+    <!-- js link -->
+     <script src="./js/login.js"></script>
 </body>
 
 </html>
